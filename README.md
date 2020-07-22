@@ -97,7 +97,7 @@ This will automatically deploy your files to Azure, download the npm pacakges, b
 8. In your tab folder initialize a Git repository using `git init`
 9. Build the solution using `gulp build` to make sure you don't have any errors
 10. Commit all your files using `git add -A && git commit -m "Initial commit"`
-11. Run the following command to set up the remote repository: `git remote add azure https://<username>@typescriptbr.scm.azurewebsites.net:443/typescriptbr.git`. You need to replace <username> with the username of the App Credentials you retrieved in _Deployment Credentials_. You can also copy the URL from *Options* in the Azure Web App.
+11. Run the following command to set up the remote repository: `git remote add azure https://$typescriptbr@typescriptbr.scm.azurewebsites.net:443/typescriptbr.git`. You need to replace <username> with the username of the App Credentials you retrieved in _Deployment Credentials_. You can also copy the URL from *Options* in the Azure Web App.
 12. To push your code use to Azure use the following command: `git push azure master`, you will be asked for your credentials the first time, insert the Password for the App Credential. Note that you should update the Azure Web Site application setting before pushing the code as the settings are needed when building the application.
 13. Wait until the deployment is completed and navigate to https://typescriptbr.azurewebsites.net/privacy.html to test that the web application is running
 14. Done

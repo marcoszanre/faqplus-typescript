@@ -1,0 +1,44 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Compartilhe sua dúvida abaixo:",
+            "fontType": "Default",
+            "size": "Medium",
+            "weight": "Bolder",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Título:"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Título",
+            "id": "txtTitle"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Descrição"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Descrição",
+            "isMultiline": true,
+            "id": "txtDescription"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Enviar",
+                    "style": "positive"
+                }
+            ]
+        }
+    ]
+}
